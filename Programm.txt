@@ -1,0 +1,25 @@
+PROGRAMM;
+	FUNC valstr (string s);
+		integer i;
+		i = 0;
+		WHILE s[i]!=endline
+			DO
+			i = i + 1;
+		ENDWHILE;
+    RETURN i;
+	ENDF;
+	integer x;
+	bool y;
+	string z;
+	z = "www";
+	WHILE x > 5
+		DO
+			x = x - 1;
+		  	if x == 5 then
+				y = (valstr(z)>x);
+				EXITWHILE;
+            else y = (valstr(z) < 15);
+			endif;
+	ENDWHILE;
+	x = 1;
+END.
